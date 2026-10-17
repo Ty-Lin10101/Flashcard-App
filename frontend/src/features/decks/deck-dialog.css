@@ -1,0 +1,134 @@
+.modal-backdrop {
+  position: fixed;
+  z-index: 5;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #24223880;
+  backdrop-filter: blur(3px);
+}
+
+.deck-dialog {
+  width: min(100%, 440px);
+  padding: 26px 28px 25px;
+  background: #fff;
+  border: 1px solid #f1eff7;
+  border-radius: 16px;
+  box-shadow: 0 22px 70px #19172f3b;
+  animation: dialog-in 160ms ease-out;
+}
+
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.dialog-mark {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  color: #6959d2;
+  background: #f0edff;
+  border-radius: 11px;
+}
+
+.dialog-close {
+  color: #9998a9;
+  background: #f8f7fa;
+}
+
+.deck-dialog .eyebrow {
+  margin-bottom: 7px;
+  font-size: 9px;
+}
+
+.deck-dialog h2 {
+  margin: 0;
+  color: #302f44;
+  font-family: Manrope, sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.7px;
+}
+
+.dialog-description {
+  margin: 7px 0 22px;
+  color: #88879a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.field-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  color: #4b4a5f;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.field-label span {
+  color: #a1a0b0;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+  color: #3c3b50;
+  background: #fff;
+  border: 1px solid #e8e7ee;
+  border-radius: 8px;
+  outline: 0;
+  font-size: 11px;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.form-input:focus {
+  border-color: #9a8ee4;
+  box-shadow: 0 0 0 3px #8372df1a;
+}
+
+.form-input::placeholder {
+  color: #b2b1be;
+}
+
+.description-label {
+  margin-top: 17px;
+}
+
+.form-textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.form-error {
+  margin: 10px 0 0;
+  color: #bb4f5b;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 23px;
+  padding-top: 17px;
+  border-top: 1px solid #f0eff4;
+}
+
+.dialog-actions .button {
+  min-height: 39px;
+  font-size: 11px;
+}
