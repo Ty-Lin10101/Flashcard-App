@@ -34,4 +34,4 @@ npm install
 npm run dev
 ```
 
-To run the Tauri desktop app, use `npm run tauri -- dev`. To type-check and create a production frontend build, use `npm run build`. Desktop builds also require the Rust toolchain and Tauri's platform-specific prerequisites.
+To run the Tauri desktop app, use `npm run tauri -- dev` from `frontend`. To type-check and create a production frontend build, run `npm run build` from the repository root or the `frontend` directory. The root command forwards to the frontend build; it does not require the backend to be running. Desktop builds also require the Rust toolchain and Tauri's platform-specific prerequisites.

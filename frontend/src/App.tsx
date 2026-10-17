@@ -1,7 +1,8 @@
+import LibraryPage from "./pages/LibraryPage";
 import "./App.css";
 
 function App() {
-  return null;
+  return <LibraryPage />;
 }
 
 export default App;
